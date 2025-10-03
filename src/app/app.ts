@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormArray } from './form-array/form-array';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FormArray],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('formarray');
